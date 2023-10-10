@@ -69,7 +69,7 @@ console.log(exampleString.length);
 //Methods - is something that you executed and must be followed by parenthesis in order to invoque it
 console.log(exampleString.toLocaleUpperCase());
 
-//Math Library
+//MATH LIBRARY:
 
 //In-buit JavaScript mathematical methods
 
@@ -91,20 +91,24 @@ console.log(Math.ceil(Math.random() * 10));
 //Math.round - rounds down either higher or lower value, depending on the number
 console.log(Math.round(Math.floor() * 10));
 
+//Math.pow(base,exponent) isused for exponential numbers, where the first component is the base and the second is the exponent,e.g. 3square 2 (base is 3, exponentn is 2).
+
 //Accessing variables / Template Literals
-//let firstName = "Lola"
+let myFirstName = "Lola"
 
-//let lastName = "Marquez"
+let myLastName = "Marquez"
 
-//console.log(firstName);
-//console.log(lastName);
+console.log(myFirstName);
+console.log(myLastName);
 
-//console.log("My name is" + firstName + lastName);
+console.log("My name is" + myFirstName + myLastName);
 
-//console.log("My name is" + " " + firstName + " " + lastName);
+console.log("My name is" + " " + myFirstName + " " + myLastName);
 
 //Template Literals
-//console.log(`My name is ${firstName} ${lastName}.`);
+console.log(`My name is ${myFirstName} ${myLastName}.`);
+
+
 
 //TASK -MONDAY 9/10/2023
 //1: Create a variable that stores your name and log a string to the console that personally greets you using template literals.
@@ -123,5 +127,8 @@ let breakfast = "coffee and cereal";
 let lunch = "ham and cheese sandwich";
 let dinner = "spagetti bolognaise with a side salad";
 console.log(`Yesterday I had ${breakfast} for breakfast, ${lunch} for lunch, and ${dinner} for dinner.`);
+
+
+
 
 
