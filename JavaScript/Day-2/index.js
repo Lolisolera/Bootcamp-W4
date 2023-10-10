@@ -148,7 +148,7 @@ if (age >= 18) {
 ////2: Declare a variable called "Password". Write an if statement that checks how many characters are in the password, if the password has more than 8 characters log the password to the console, if the password has less than 8 characters log to the console that the password is too short.
 
 
-let password = "lalalalalalalalalalalalalalal";
+let password = "lalalalalalalala";
 
 if (password.length >= 8) {
     console.log("Password:", password);
@@ -172,7 +172,7 @@ if (number % 3 === 0 || number % 5 === 0) {
 
 //4: Create a variable that stores a number. If the number is divisible by 3, log "fizz" to the console. If the number is divisible by 5 log "buzz" to the console. If the number is divisible by both 3 and 5, log "fizz buzz" to the console. Otherwise log the number to the console.
 
-let n = 30;
+let n = 15;
 
 if (n % 3 === 0 && n % 5 === 0) {
     console.log("fizz buzz");
