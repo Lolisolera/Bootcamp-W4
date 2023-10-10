@@ -1,7 +1,7 @@
-//Properties- Are data or INformation about the object
+//Properties- Are data or Information about the object
 
 //Methods - Are things the object can do
-//Usisng the console object and the log method to log a statement 
+//Using the console object and the log method to log a statement 
 console.log("Hello World!");
 
 //Data Types
@@ -80,15 +80,15 @@ console.log(Math.random());
 
 console.log(Math.random() * 10);
 
-//Math.round - rounds the result to a whole number
+//Math.floor - rounds the result to a whole number to a lower value.
 
 console.log(Math.round(Math.random() * 10));
 
-//Math.round - rounds up
+//Math.ceil - rounds up to a higher value.
 console.log(Math.ceil(Math.random() * 10));
 
 
-//Math.round - rounds down
+//Math.round - rounds down either higher or lower value, depending on the number
 console.log(Math.round(Math.floor() * 10));
 
 //Accessing variables / Template Literals
