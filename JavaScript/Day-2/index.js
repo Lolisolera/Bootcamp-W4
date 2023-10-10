@@ -1,35 +1,13 @@
 
-/*
-//TASK -MONDAY 9/10/2023
-
-//TEMPLATE LITERALS - SOLUTION:
-//1: Create a variable that stores your name and log a string to the console that personally greets you using template literals.
-
-const firstName = "Lola";
-const lastName = "Marquez";
-console.log(`Hello,  ${firstName} ${lastName}!`);
-
-
-//2: Create variables storing your name, your favourite colour and your favourite film or tv series. Using template literals I want you to log a sentence including these values to the console.
-let favouriteColor = "Red";
-let favouriteFilm = "Lost in Translation";
-console.log(`My name is ${firstName}. ${favouriteColor} is my favourite color and ${favouriteFilm} is my favourite film.`);
-
-//3: Create variables storing what you ate for breakfast, lunch and dinner yesterday and log them to the console. Without redeclaring new variables I would like you to assign a new value of what you ate today to the variables, and again log them to the console.
-let breakfast = "coffee and cereal";
-let lunch = "ham and cheese sandwich";
-let dinner = "spagetti bolognaise with a side salad";
-console.log(`Yesterday I had ${breakfast} for breakfast, ${lunch} for lunch, and ${dinner} for dinner.`);
-
 //WE COULD USE EITHER let OR const
 
 //Passing new value to variables by referencing the variable name: We can't do it writing "let", but yes, just reassigning the vLUES. SEE BELOW:
 
-breakfast = "toast";
-lunch = "pasta";
-dinner = "pizza";
+let breakfast = "toast";
+let lunch = "pasta";
+let dinner = "pizza";
 
-console.log(`Yesterday I had ${breakfast} for breakfast, ${lunch} for lunch, and ${dinner} for dinner.`);*/
+console.log(`Yesterday I had ${breakfast} for breakfast, ${lunch} for lunch, and ${dinner} for dinner.`);
 
 
 //TUESDAY 10/10/2023
@@ -39,28 +17,28 @@ console.log(`Yesterday I had ${breakfast} for breakfast, ${lunch} for lunch, and
 //Conditions in javascript:
 
 //If /Else
-/*let weather = "rain";
+let weather = "rain";
 
 //Is the value of the wheather variable equal to the string of sunny.
 
-//console.log(weather == "sunny");
-/*
-if (weather == "sunny") {
+console.log(weather === "sunny");
+
+if (weather === "sunny") {
     console.log("Bring your sunglasses!");
-} else if (weather == "rain") {
+} else if (weather === "rain") {
     console.log("Grab an umbrella");
-} else if (weathter == "snow"); {
+} else if (weather === "snow") {
     console.log("It's snowing");
 } else {
     console.log("I'm not sure, maybe bring a jacket");
-}*/
+}
 
 //Comparison operators
 
 //=== checks the value and the date type, e.g. "10" and 10 are the same.
-/*let a = "10"
-console.log(a == 10);
-console.log(a === 10);*/
+let a = "10"
+console.log(a == 10); //TRUE
+console.log(a === 10); //FALSE
 
 //!==  Not equal to
 
@@ -68,7 +46,18 @@ console.log(a === 10);*/
 
 //&& AND
 
-/*let num = 10;
+// > Greater than
+
+// <  Lesser than
+
+// >=  Greater than or equal to
+
+// <=  Lesser than or equal to
+
+
+
+let num = 10;
+
 if (num > 5 && num <= 10) {
     console.log(`${num}is between 5 and 10`);
 } else {
@@ -77,20 +66,27 @@ if (num > 5 && num <= 10) {
 
 
 //Traffic light example
-let trafficLight = "Amber";
+let trafficLight = "Red";
 
-//If traffic light is on red or amber log "stop" to the console.
+//If traffic light is on red or amber log "stop" in the console.
 if (trafficLight === "Red" || trafficLight === "Amber") {
     console.log("Stop!");
 } else {
     console.log("Go!");
 }
 
+//If traffic light is on "Green" log "Go!" in the console. Choose the above way of solving the problem or this one below, either will work, but not bot! These 2 are just 2 examples).
+if (trafficLight === "Green") {
+    console.log("Go!");
+} else {
+    console.log("Stop!");
+}
 
 
-//Switch Statement
 
-let day = "Wednesday"
+//Switch Statement:
+
+let day = "Friday"
 
 switch (day) {
     case "Monday":
@@ -103,7 +99,7 @@ switch (day) {
         console.log("Halfway through the week!");
         break;
     case "Thursday":
-        console.log("It's almost the week!");
+        console.log("It's almost the weekend!");
 
     case "Friday":
         console.log("It's already Friday!");
@@ -111,9 +107,9 @@ switch (day) {
     default:
         console.log("It's the weekend!");
 
-}*/
+}
 
-// TASKS:
+// END OF TUEDAY TASKS:
 
 //1: Write a conditional check that checks whether a customer is old enough to be served alcohol at a bar. Declare a variable called age and write an if statement that checks whether age is 18 or above. If age is less than 18 log "Sorry, I can't serve you" to the console, if age is 18 or above log "No problem, what would you like to drink?"
 
