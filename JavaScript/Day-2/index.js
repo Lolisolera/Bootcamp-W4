@@ -109,6 +109,27 @@ switch (day) {
 
 }
 
+
+// Switch Statement 2 - Grade Example
+
+let testScore = 80;
+
+switch (true) {
+    case testScore >= 70:
+        console.log("Distinction");
+        break;
+    case testScore >= 60:
+        console.log("Merit");
+        break;
+    case testScore >= 50:
+        console.log("Pass");
+        break;
+    default:
+        console.log("Failed");
+}
+
+
+
 // END OF TUEDAY TASKS:
 
 //1: Write a conditional check that checks whether a customer is old enough to be served alcohol at a bar. Declare a variable called age and write an if statement that checks whether age is 18 or above. If age is less than 18 log "Sorry, I can't serve you" to the console, if age is 18 or above log "No problem, what would you like to drink?"
@@ -129,13 +150,11 @@ if (age >= 18) {
 
 let password = "lalalalalalalalalalalalalalal";
 
-
 if (password.length >= 8) {
     console.log("Password:", password);
 } else {
     console.log("The password is too short.");
 }
-
 
 
 
@@ -153,7 +172,7 @@ if (number % 3 === 0 || number % 5 === 0) {
 
 //4: Create a variable that stores a number. If the number is divisible by 3, log "fizz" to the console. If the number is divisible by 5 log "buzz" to the console. If the number is divisible by both 3 and 5, log "fizz buzz" to the console. Otherwise log the number to the console.
 
-let n = 2;
+let n = 30;
 
 if (n % 3 === 0 && n % 5 === 0) {
     console.log("fizz buzz");
@@ -164,6 +183,7 @@ if (n % 3 === 0 && n % 5 === 0) {
 } else {
     console.log(n);
 }
+
 
 
 
