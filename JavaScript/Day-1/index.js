@@ -123,3 +123,5 @@ let breakfast = "coffee and cereal";
 let lunch = "ham and cheese sandwich";
 let dinner = "spagetti bolognaise with a side salad";
 console.log(`Yesterday I had ${breakfast} for breakfast, ${lunch} for lunch, and ${dinner} for dinner.`);
+
+
