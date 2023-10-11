@@ -147,7 +147,9 @@ for (let i =1; 1<=5; 1++){
 
 //Tasks: 
 
-//1: Create an array of your favourite Films / TV shows, up to 5 items. Use an array method to add 2 more items to your array. Use a loop to cycle through the array and log each item to the console.
+//1: Create an array of your favourite Films / TV shows, up to 5 items.
+// Use an array method to add 2 more items to your array. 
+//Use a loop to cycle through the array and log each item to the console.
 
 //A printed array items
 let favoriteFilms = [
@@ -209,7 +211,9 @@ for (let i = 20; i >= 0; i--) {
 
 
 
-//4: Generate 5 random numbers between 1-50. For each number generated, check if the number is divisible by 5 or not. Log whether it is divisible or not to the console.
+//4: Generate 5 random numbers between 1-50. 
+//For each number generated, check if the number is divisible by 5 or not.
+// Log whether it is divisible or not to the console.
 
 for (let i = 0; i < 5; i++) {
     const randomNumber = Math.floor(Math.random() * 50) + 1;
