@@ -149,7 +149,7 @@ for (let i =1; 1<=5; 1++){
 
 //1: Create an array of your favourite Films / TV shows, up to 5 items. Use an array method to add 2 more items to your array. Use a loop to cycle through the array and log each item to the console.
 
-
+//A printed array items
 let favoriteFilms = [
     "Lost in Translation",
     "ET",
@@ -163,6 +163,31 @@ favoriteFilms.push("Bo is Afraid", "Ninja");
 for (let i = 0; i < favoriteFilms.length; i++) {
     console.log(`favoriteFilms ${i + 1}: ${favoriteFilms[i]}`);
 }
+
+
+
+//B printed array items looped randomly 
+let myFilms = [
+    "Lost in Translation",
+    "ET",
+    "Rambo",
+    "The Jungle Book",
+    "Fame",
+    "Bo is Afraid",
+    "Ninja"
+];
+
+// Shuffle the array using the Fisher-Yates shuffle algorithm
+for (let i = myFilms.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [myFilms[i], myFilms[j]] = [myFilms[j], myFilms[i]];
+}
+
+// Print the shuffled array
+for (let i = 0; i < myFilms.length; i++) {
+    console.log(`myFilms ${i + 1}: ${myFilms[i]}`);
+}
+
 
 
 
