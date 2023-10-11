@@ -141,7 +141,6 @@ for (let i =1; 1<=5; 1++){
 //For loop -Array
 
 
-
 */
 
 
@@ -150,11 +149,50 @@ for (let i =1; 1<=5; 1++){
 
 //1: Create an array of your favourite Films / TV shows, up to 5 items. Use an array method to add 2 more items to your array. Use a loop to cycle through the array and log each item to the console.
 
+
+let favoriteFilms = [
+    "Lost in Translation",
+    "ET",
+    "Rambo",
+    "The Jungle Book",
+    "Fame",
+];
+
+favoriteFilms.push("Bo is Afraid", "Ninja");
+
+for (let i = 0; i < favoriteFilms.length; i++) {
+    console.log(`favoriteFilms ${i + 1}: ${favoriteFilms[i]}`);
+}
+
+
+
 //2: Write a loop to generate 10 random numbers between 1-100 and log them to the console.
+
+
+for (let i = 0; i < 10; i++) {
+    const randomNumber = Math.floor(Math.random() * 100) + 1;
+    console.log(`Random Number ${i + 1}: ${randomNumber}`);
+}
+
+
 
 //3: Write a loop that counts backwards from 20-0, logging each number to the console.
 
+for (let i = 20; i >= 0; i--) {
+    console.log(i);
+}
+
+
+
 //4: Generate 5 random numbers between 1-50. For each number generated, check if the number is divisible by 5 or not. Log whether it is divisible or not to the console.
+
+for (let i = 0; i < 5; i++) {
+    const randomNumber = Math.floor(Math.random() * 50) + 1;
+    const isDivisibleBy5 = randomNumber % 5 === 0;
+
+    console.log(`Random Number ${i + 1}: ${randomNumber} is divisible by 5: ${isDivisibleBy5}`);
+}
+
 
 
 
