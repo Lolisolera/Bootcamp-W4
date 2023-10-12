@@ -89,39 +89,6 @@ checkNumber(3);
 checkNumber(8);
 
 
-//3. Write a function that replicates the functionality of Cash Machine / ATM. 
-//The ATM should have parameters of pin number and withdrawal amount that are compared to variables of account balance and stored pin number. 
-//If the pin passed as an argument is correct and the withdrawal amount is less than the account balance, approve the transaction. 
-//If the pin is wrong or the withdrawal amount is greater than the account balance, deny the transaction.
-
-
-function atm(pin, withdrawalAmount) {
-
-    const storedPin = 1357; //example of stored pin
-    const accountBalance = 2000; //example of account balance
-
-    // Check if the PIN is correct and the withdrawal amount is within the account balance
-    if (pin === storedPin) {
-        if (withdrawalAmount <= accountBalance) {
-            // Approve the transaction
-            console.log(`Transaction approved. You have withdrawn $${withdrawalAmount}. Your new balance is $${accountBalance - withdrawalAmount}.`);
-        } else {
-            // Withdrawal amount exceeds the account balance
-            console.log(`Transaction denied. Insufficient funds.`);
-        }
-    } else {
-        // Incorrect PIN
-        console.log(`Transaction denied. Incorrect PIN.`);
-    }
-}
-
-// Example usage:
-atm(1357, 200); // Successful withdrawal
-atm(1357, 2100); // Insufficient funds
-atm(1356, 300); // Incorrect PIN
-
-//4: Research arrow functions to familiarise yourself with the differences between them and function declarations. I would then like you to write some example arrow functions and convert a function from a declaration to an arrow function. 
-
 
 
 //3. Write a function that replicates the functionality of Cash Machine / ATM. 
@@ -132,19 +99,22 @@ atm(1356, 300); // Incorrect PIN
 
 function atm(pinNumber, withdrawalAmount) {
 
-    const pin = 1357;
-    const accontBalance = 2000;
+    const pin = 1357; //example of stored pin
+    const accontBalance = 2000; //example of account balance
 
+    // Check if the PIN is correct and the withdrawal amount is within the account balance
     if (pin === pinNumber) {
-
+        // Approve the transaction
 
         if (withdrawalAmount <= accontBalance) {
-            console.log(`Transaction aproved. You have withdrawn $${withdrawalAmount}. Your new balance is $${accountBalance - withdrawalAmount}.`);
+            console.log(`Transaction aproved. You have withdrawn $${withdrawalAmount}. Your new balance is $${accontBalance - withdrawalAmount}.`);
         } else {
-            console.log("Transaction denied. Sorry  Insufficient funds'")
+            // Withdrawal amount exceeds the account balance
+            console.log("Transaction denied. Sorry Insufficient funds");
         }
 
     } else {
+        // Incorrect PIN
         console.log("Incorrect pin number");
     }
 
@@ -154,3 +124,7 @@ function atm(pinNumber, withdrawalAmount) {
 atm(1357, 200); // Successful withdrawal
 atm(1357, 2100); // Insufficient funds
 atm(1356, 300); // Incorrect PIN
+
+
+//4: Research arrow functions to familiarise yourself with the differences between them and function declarations. 
+//I would then like you to write some example arrow functions and convert a function from a declaration to an arrow function. 
