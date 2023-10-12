@@ -139,13 +139,18 @@ function atm(pinNumber, withdrawalAmount) {
 
 
         if (withdrawalAmount <= accontBalance) {
-            console.log("Transaction approved. Here's your" `${withdrawalAmount}'. "Your current balance is" '${accontBalance}');
+            console.log(`Transaction aproved. You have withdrawn $${withdrawalAmount}. Your new balance is $${accountBalance - withdrawalAmount}.`);
+        } else {
+            console.log("Transaction denied. Sorry  Insufficient funds'")
         }
-    
-       
 
     } else {
         console.log("Incorrect pin number");
     }
 
 }
+
+// Example usage:
+atm(1357, 200); // Successful withdrawal
+atm(1357, 2100); // Insufficient funds
+atm(1356, 300); // Incorrect PIN
