@@ -138,8 +138,10 @@ function sayHello(name) {
     return `Hello, ${name}!`;
 }
 
+
 // Arrow Function
 let sayHi = (name) => `Hi, ${name}!`;
+
 
 
 
