@@ -71,7 +71,6 @@ function greeting(name) {
     console.log(`Hello, ${name}! Welcome to my world.`);
 }
 
-// Example usage:
 greeting("Lola");
 
 
@@ -122,3 +121,31 @@ atm(1357, 2100); // Insufficient funds
 atm(1356, 300); // Incorrect PIN
 
 //4: Research arrow functions to familiarise yourself with the differences between them and function declarations. I would then like you to write some example arrow functions and convert a function from a declaration to an arrow function. 
+
+
+
+//3. Write a function that replicates the functionality of Cash Machine / ATM. 
+//The ATM should have parameters of pin number and withdrawal amount that are compared to variables of account balance and stored pin number. 
+//If the pin passed as an argument is correct and the withdrawal amount is less than the account balance, approve the transaction. 
+//If the pin is wrong or the withdrawal amount is greater than the account balance, deny the transaction.
+
+
+function atm(pinNumber, withdrawalAmount) {
+
+    const pin = 1357;
+    const accontBalance = 2000;
+
+    if (pin === pinNumber) {
+
+
+        if (withdrawalAmount <= accontBalance) {
+            console.log("Transaction approved. Here's your" `${withdrawalAmount}'. "Your current balance is" '${accontBalance}');
+        }
+    
+       
+
+    } else {
+        console.log("Incorrect pin number");
+    }
+
+}

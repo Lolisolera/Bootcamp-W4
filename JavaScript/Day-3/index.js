@@ -215,15 +215,15 @@ for (let i = 20; i >= 0; i--) {
 //For each number generated, check if the number is divisible by 5 or not.
 // Log whether it is divisible or not to the console.
 
+
 for (let i = 0; i < 5; i++) {
     const randomNumber = Math.floor(Math.random() * 50) + 1;
-    const isDivisibleBy5 = randomNumber % 5 === 0;
-
-    console.log(`Random Number ${i + 1}: ${randomNumber} is divisible by 5: ${isDivisibleBy5}`);
+    if (randomNumber % 5 === 0) {
+        console.log(`${randomNumber} is divisible by 5`);
+    } else {
+        console.log(`${randomNumber} is NOT divisible by 5`);
+    }
 }
-
-
-
 
 
 
