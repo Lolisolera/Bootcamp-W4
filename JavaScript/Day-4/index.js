@@ -74,7 +74,8 @@ function greeting(name) {
 greeting("Lola");
 
 
-//2: Write a function that takes in a number as an argument and check whether it is odd or even and logs the result to the console.
+//2: Write a function that takes in a number as an argument 
+//and check whether it is odd or even and logs the result to the console.
 
 function checkNumber(number) {
     if (number % 2 === 0) {
@@ -128,3 +129,64 @@ atm(1356, 300); // Incorrect PIN
 
 //4: Research arrow functions to familiarise yourself with the differences between them and function declarations. 
 //I would then like you to write some example arrow functions and convert a function from a declaration to an arrow function. 
+
+
+//1 - Basic Arrow Function:
+
+//  Declaration
+function sayHello(name) {
+    return `Hello, ${name}!`;
+}
+
+// Arrow Function
+let sayHi = (name) => `Hi, ${name}!`;
+
+
+
+//2 - Arrow Function with No Parameters:
+
+// Declaration
+function greet() {
+    return "Hello, World!";
+}
+
+// Arrow Function
+let welcome = () => "Hello, World!";
+
+
+
+//3 - Arrow Function with Multiple Parameters:
+// Declaration
+
+function add(a, b) {
+    return a + b;
+}
+
+// Arrow Function
+let sum = (a, b) => a + b;
+
+
+//4 - Arrow Function with a Block of Code:
+
+// Declaration
+function multiply(a, b) {
+    if (a === 0 || b === 0) {
+        return 0;
+    } else {
+        return a * b;
+    }
+}
+
+// Arrow Function
+let multiplication = (a, b) => {
+    if (a === 0 || b === 0) {
+        return 0;
+    } else {
+        return a * b;
+    }
+};
+
+
+
+
+
