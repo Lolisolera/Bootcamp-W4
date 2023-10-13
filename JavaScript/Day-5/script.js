@@ -243,7 +243,6 @@ const library = {
 
 //SOLUTION:
 
-
 const greatGatsbyTitle = library.books.find(book => book.title === 'The Great Gatsby').title;
 console.log(greatGatsbyTitle); // 
 
