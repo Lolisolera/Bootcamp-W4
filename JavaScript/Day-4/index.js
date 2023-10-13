@@ -131,6 +131,7 @@ atm(1356, 300); // Incorrect PIN
 //I would then like you to write some example arrow functions and convert a function from a declaration to an arrow function. 
 
 
+
 //1 - Basic Arrow Function:
 
 //  Declaration
@@ -138,10 +139,8 @@ function sayHello(name) {
     return `Hello, ${name}!`;
 }
 
-
 // Arrow Function
 let sayHi = (name) => `Hi, ${name}!`;
-
 
 
 
