@@ -167,32 +167,6 @@ for (let i = 0; i < favoriteFilms.length; i++) {
 }
 
 
-
-//B printed array items looped randomly 
-let myFilms = [
-    "Lost in Translation",
-    "ET",
-    "Rambo",
-    "The Jungle Book",
-    "Fame",
-    "Bo is Afraid",
-    "Ninja"
-];
-
-// Shuffle the array using the Fisher-Yates shuffle algorithm
-for (let i = myFilms.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [myFilms[i], myFilms[j]] = [myFilms[j], myFilms[i]];
-}
-
-// Print the shuffled array
-for (let i = 0; i < myFilms.length; i++) {
-    console.log(`myFilms ${i + 1}: ${myFilms[i]}`);
-}
-
-
-
-
 //2: Write a loop to generate 10 random numbers between 1-100 and log them to the console.
 
 
